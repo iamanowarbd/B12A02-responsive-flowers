@@ -121,7 +121,7 @@
 }
 
 .banner-img{
-    padding-top: 105px;
+    padding-top: 140px;
     width: 570px;
 }
 .banner-img img{
@@ -193,6 +193,7 @@
 
 .plants-lover{
     display: flex;
+    position: relative;
     justify-items: center;
     align-items: center;
     margin: 120px auto;
@@ -208,13 +209,15 @@
 
 .lover-img img{
     display: block;
+    width: 540px;
+    height: auto;
 
 }
 
 .trusted-badge img{
     width: 286px;
     height: auto;
-    -webkit-filter: drop-shadow(0px 10px 2px );
+    -webkit-filter: drop-shadow(-4px 10px 4px rgba(0, 0, 0, 0.25));
 }
 
 .trusted-badge{
@@ -224,8 +227,9 @@
 }
 
 .lover-right{
-    flex: 1;
+    margin-top: 40px;
     margin-left: 60px;
+    justify-content: center;
 }
 
 .lover-title{
@@ -253,4 +257,131 @@
  .lovers-description{
     align-items: center;
     margin-left: 20px;
+}
+
+/* medium size device */
+@media screen and (max-width: 576px) {
+   
+    .nav-link-active{
+        display: none;
+    }
+    .nav-link{
+        display: none;
+    }
+    .navbar
+    {
+        display: flex;
+    }
+    .banner{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+    .banner-img{
+        width: 100%;
+        order: 1;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+    .banner-img img{
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        object-fit: cover;
+    }
+    .banner-content{
+        max-width: 100%;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        order: 2;
+        padding: 20px 10px;
+    }
+    .banner-title h3,
+    .plants-title h3{
+        font-size: 1.5rem;
+        font-weight: bold;
+        font-family: "Noto Serif", serif;
+        color: #E95A08;
+    }
+    .banner-description{
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+
+    /* section plants */
+    .trusted-badge{
+        display: none;
+    }
+    .plants-lover{
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10px;
+        margin: 60px auto;
+    }
+    .lover-title{
+        font-size: 1.5rem;
+        text-align: center;
+
+    }
+    .lover-left{
+        max-width: 358px;
+    }
+    .lover-img img{
+        width: 358px;
+        height: auto;
+    }
+    .lover-right{
+        margin-top: 20px;
+        margin-left: 0;
+    }
+    .lovers-list ul{
+        max-width: 358px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .lovers-list li{
+        width: 360px;
+        font-size: .8rem;
+    }
+
+    /* add to cart card */
+    .plants-cards {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    gap: 20px;
+     }
+
+    .plants-card {
+    width: 171px;
+    padding: 10px;
+    text-align: center;
+    }
+
+    .plants-card img {
+    width: 100%;
+    height: auto;
+    max-width: 171px;
+    object-fit: contain;
+    }
+
+    .plants-card h5,
+    .plants-card h4 {
+    font-size: 0.95rem;
+    margin: 6px 0;
+    }
+
+    .plants-card .btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 0.85rem;
+    }
+    .plants-description{
+        width: 361px;
+    }
+
 }

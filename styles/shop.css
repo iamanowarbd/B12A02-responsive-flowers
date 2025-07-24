@@ -45,6 +45,17 @@
 .dark-title{
     color: #000;
 }
+.btn{
+    font-family: "Inter", sans-serif;
+    background-color: #E95A08;
+    color: #FFFFFF;
+    text-align: center;
+    width: 270px;
+    padding: 26px 50px;
+    border: none;
+    size: 1rem;
+    font-weight: 600;
+}
 
 /* navbar */
 
@@ -123,8 +134,6 @@
     font-weight: bold;
     font-family: "Noto Serif", serif;
     color: #E95A08;
-    margin: 0;
-    padding: 0;
 }
 
 .banner-description{
@@ -133,4 +142,49 @@
     font-family: "Inter", sans-serif;
     margin: 0;
     padding: 0;
+}
+
+/* section plants */
+.section-plants{
+    align-items: center;
+    justify-items: center;
+}
+
+.plants-cards{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+    row-gap: 30px;
+    padding-top: 30px;
+}
+
+.plants-title h3{
+    font-size: 3.15rem;
+    font-weight: bold;
+    font-family: "Noto Serif", serif;
+    color: #E95A08;
+    margin: 0;
+    padding: 0;
+}
+.plants-description{
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5)1;
+    margin: 0;
+    padding: 0;
+}
+
+.card-description{
+    text-align: center;
+}
+
+.card-description h5{
+    font-weight: 400;
+    font-size: 1.357rem;
+}
+
+.card-description h4{
+    font-weight: 700;
+    font-size: 1.357rem;
 }

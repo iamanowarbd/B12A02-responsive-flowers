@@ -41,6 +41,11 @@
     max-width: 1140px;
     margin: 0 auto;
 }
+
+.dark-title{
+    color: #000;
+}
+
 /* navbar */
 
 .logo{
@@ -59,7 +64,9 @@
     text-decoration: none;
     margin-right: 40px;
 }
-
+.nav-link-c{
+    text-decoration: none;
+}
 .nav-item img{
     align-items: center;
     width: 22px;
@@ -81,7 +88,49 @@
     list-style: none;
     align-items: center;
 }
-.div-c{
+.cart{
     margin-left: 10px;
     color: #252432;
+}
+
+/* banner */
+.banner{
+    margin: 120px auto;
+    display: flex;
+    gap: 0;
+    justify-items: center;
+    align-items: center;
+    max-width: 1140px;
+    padding: 0 20px;
+}
+
+.banner-content{
+    padding-top: 162px;
+    width: 570px;
+}
+
+.banner-img{
+    padding-top: 105px;
+    width: 570px;
+}
+.banner-img img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.banner-title h3{
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: "Noto Serif", serif;
+    color: #E95A08;
+    margin: 0;
+    padding: 0;
+}
+
+.banner-description{
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
 }

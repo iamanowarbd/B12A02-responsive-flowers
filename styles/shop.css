@@ -340,6 +340,114 @@
     text-decoration: underline;
     font-family: "Inter", sans-serif;
 }
+/* subscribe container */
+
+.subscribe-container {
+    font-family: "Noto Serif", serif;
+    text-align: center;
+    background-image: url(/assets/news-letter-bg.png);
+    background-size: cover;
+    max-width: 100%;
+    width: 100%;
+    margin: 0 ;
+    padding: 100px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    font-size: 3.125rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.email-input {
+    width: 644px;
+    align-items: center;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    font-size: 1rem;
+}
+
+.subscribe-btn {
+    background-color: #E95A08;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* footer */
+
+.footer {
+    background-color: #f8f8f8;
+    padding: 40px 20px;
+    align-items: center;
+    color: #333;
+}
+
+.footer-container {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+}
+
+.footer-brand {
+    margin-bottom: 20px;
+}
+
+.footer-brand h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #2a2a2a;
+}
+
+.footer-brand p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+.link-column h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #2a2a2a;
+}
+
+.link-column ul {
+    list-style: none;
+}
+
+.link-column ul li {
+    margin-bottom: 12px;
+}
+
+.link-column ul li a {
+    text-decoration: none;
+    color: #666;
+    transition: color 0.3s;
+    font-size: 15px;
+}
+
+.link-column ul li a:hover {
+    color: #ff6b6b;
+}
+
+.footer-icon{
+    display: grid;
+    grid-template-rows: repeat (4, 1fr);
+}
 
 /* medium size device */
 @media screen and (max-width: 576px) {
@@ -450,34 +558,34 @@
 
     /* add to cart card */
     .plants-cards {
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        gap: 20px;
      }
 
     .plants-card {
-    width: 171px;
-    padding: 10px;
-    text-align: center;
+        width: 171px;
+        padding: 10px;
+        text-align: center;
     }
 
     .plants-card img {
-    width: 100%;
-    height: auto;
-    max-width: 171px;
-    object-fit: contain;
+        width: 100%;
+        height: auto;
+        max-width: 171px;
+        object-fit: contain;
     }
 
     .plants-card h5,
     .plants-card h4 {
-    font-size: 0.95rem;
-    margin: 6px 0;
+        font-size: 0.95rem;
+        margin: 6px 0;
     }
 
     .plants-card .btn {
-    width: 100%;
-    padding: 12px;
-    font-size: 0.85rem;
+        width: 100%;
+        padding: 12px;
+        font-size: 0.85rem;
     }
     .plants-description{
         width: 361px;
@@ -496,10 +604,30 @@
     }
 
     .deal-zabo .deal-text-overlay {
-    padding: 90px;
+        padding: 90px;
     }
 
     .deal-bloom .deal-text-overlay {
-    padding: 90px;
+        padding: 90px;
+    }
+
+    /* subscriber container */
+    .subscribe-container {
+        max-width: 100%;
+        width: 100%;
+        padding: 20px 10px;
+        width: 95%;
+    }
+    .title {
+        font-size: 1.25rem;
+        font-weight: bold;
+        color: #FFFFFF;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .email-input, .subscribe-btn {
+        max-width: 218px;
+        padding: 10px 15px;
+        font-size: 1rem;
     }
 }

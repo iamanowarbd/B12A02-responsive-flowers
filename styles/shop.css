@@ -483,6 +483,23 @@
         width: 361px;
     }
     /* deals */
+    .deals-grid {
+        flex-direction: column;
+    }
     
+    .left-side, .right-side {
+        flex: 1 1 100%;
+    }
+    
+    .deal-item {
+        margin-bottom: 15px;
+    }
 
+    .deal-zabo .deal-text-overlay {
+    padding: 90px;
+    }
+
+    .deal-bloom .deal-text-overlay {
+    padding: 90px;
+    }
 }
